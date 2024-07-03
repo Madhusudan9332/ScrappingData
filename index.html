@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js Example</title>
+    <!-- Import Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Import your script for creating charts -->
+    <script src="chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+    
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            width: 90%;
+            margin: 20px auto;
+        }
+    
+        .chart-wrapper {
+            width: 45%;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+    
+        .chart-wrapper canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+    
+        @media (max-width: 768px) {
+            .chart-wrapper {
+                width: 100%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="chart-wrapper side-canvas">
+            <canvas id="orangeCapChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="mostFoursChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="mostSixesChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="mostFiftiesChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="mostCenturiesChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
